@@ -1,0 +1,24 @@
+body{
+    background-color: grey;
+}
+
+.header{
+    max-width: 90%;
+}
+
+.logo{
+    float: left;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20;
+}
+.nav-list{
+    background-color: orange;
+}
+
+.list{
+    padding: 20;
+}
