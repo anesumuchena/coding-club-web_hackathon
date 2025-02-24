@@ -5,3 +5,25 @@
     box-sizing: border-box;
 
 }
+body {
+    background: #191919;
+}
+
+.thumbnails {
+    width: 900px;
+    display: flex;
+
+}
+.thumbnails div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.thumbnails div img {
+    width: 100px;
+
+}
