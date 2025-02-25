@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 
 <html>  
-    
+
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corousel</title>
-
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 
 </head>
 
 <body>
     <div class="thumbnails-wrap">
-        <img src="..arrows" id="backBtn">
+        <img src="./hackathon.avif" id="backBtn">
         <div class="thumbnails">
             <div>
                 <span><img src="./hackathon.avif"></span>
                 <span><img src="./hq720 (3).avif"></span>
                 <span><img src="./hq720 (6).avif"></span>
             </div>
-    
+
             <div>
                 <span><img src="./hackathon.avif"></span>
                 <span><img src="./hq720 (3).avif"></span>
                 <span><img src="./hq720 (6).avif"></span>
             </div>
-    
-    
-        </div>./,x
-        <img src=".arrowima" id="nextBtn">
-
+        </div>
+        <img src="./hackathon.avif" id="nextBtn">
     </div>
 
+    <script>
 
+    let scrollContainer = document.querySelector(".thumbnails");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
     
+    scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+    });
+    
+    nextBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 300; 
+    });
+    backBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 300; 
+    });
 
-
+    </script>
 </body>
 
-
 </html>
-
-
-
