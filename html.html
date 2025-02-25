@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html>  
+<html lang="en">  
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corousel</title>
+    <title>Carousel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="./Imgs/accelerate-svgrepo-com.svg" id="fuseau" alt="Flying Fuseau">
+    <div class="fusee">
+        <img src="./Imgs/accelerate-svgrepo-com.svg" id="fuseau" alt="Flying Fuseau">
+    </div>  
+
     <div class="thumbnails-wrap">
         <img src="./Imgs/button-arrow-left-svgrepo-com.svg" id="backBtn">
 
         <div class="thumbnails">
-          
-
             <div class="image-container">
-                <img src="./hackathon.avif" alt="Image 1">
-                <p class="image-text">TEXT NEEDED HERE</p>
+                <img src="./Imgs/creativity-svgrepo-com.svg" alt="Image 1">
+                <p class="image-text">Create and Innovate</p>
             </div>  
             <div class="image-container">
-                <img src="./hq720 (3).avif" alt="Image 2">
+                <img src="./Imgs/cloud-acceleration-svgrepo-com.svg" alt="Image 2">
                 <p class="image-text">TEXT NEEDED HERE2</p>
             </div>  
             <div class="image-container">
-                <img src="./hq720 (6).avif" alt="Image 3">
+                <img src="./Imgs/recursive-server-svgrepo-com.svg" alt="Image 3">
                 <p class="image-text">TEXT NEEDED HERE3</p>
             </div>
-            
-           
             <div class="image-container">
-                <img src="./hackathon.avif" alt="Image 4">
+                <img src="./Imgs/network-svgrepo-com.svg" alt="Image 4">
                 <p class="image-text">TEXT NEEDED HERE</p>
             </div>  
             <div class="image-container">
-                <img src="./hq720 (3).avif" alt="Image 5">
+                <img src="./Imgs/api-interface-svgrepo-com.svg" alt="Image 5">
                 <p class="image-text">TEXT NEEDED HERE2</p>
             </div>  
         </div>
 
         <img src="./Imgs/button-arrow-right-svgrepo-com.svg" id="nextBtn">
     </div>
-    
+
     <script>
         let scrollContainer = document.querySelector(".thumbnails");
         let backBtn = document.getElementById("backBtn");
@@ -64,25 +63,28 @@
 
         const fuseau = document.getElementById("fuseau");
 
-let x = 0;
-let speed = 3; 
+        let x = 0;
+        let y = window.innerHeight; 
+        let speed = 3;
+        let direction = 1; 
 
-function flyFuseau() {
-    if (x < window.innerWidth) {
-        x += speed;
-        fuseau.style.transform = `translate(${x}px, -50%) rotate(${x}deg)`;
-        requestAnimationFrame(flyFuseau);
-    } else {
-        x = -100; 
-        flyFuseau();
-    }
-}
+        function flyFuseau() {
+            if (x < window.innerWidth && y > 0 && direction === 1) {
+                x += speed;
+                y -= speed;
+            } else if (x > 0 && y < window.innerHeight && direction === -1) {
+                x -= speed;
+                y += speed;
+            } else {
+                direction *= -1; 
+            }
 
-flyFuseau(); 
-        
+            fuseau.style.transform = `translate(${x}px, ${y}px) rotate(${x}deg)`;
+            requestAnimationFrame(flyFuseau);
+        }
+
+        flyFuseau(); 
     </script>
 </body>
 
 </html>
-
-

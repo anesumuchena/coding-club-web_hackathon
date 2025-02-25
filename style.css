@@ -1,3 +1,4 @@
+
 * { 
     margin: 0;
     padding: 0;
@@ -7,11 +8,12 @@
 
 
 body {
-    background: black; 
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     overflow: hidden;  
     height: 100vh;
     margin: 0;
 }
+
 
 #fuseau {
     width: 100px; 
@@ -23,13 +25,21 @@ body {
 }
 
 
+#fusee {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
 
 .thumbnails {
     width: 900px;
     display: flex;
     overflow-x: scroll;
 }
-
 
 .thumbnails div {
     display: flex;
@@ -47,8 +57,9 @@ body {
     justify-content: center;
 }
 
+
 .image-container img {
-    width: 250px;
+    width: 250px; 
     filter: grayscale(100%);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -56,10 +67,12 @@ body {
 
 .image-text {
     margin-top: 10px;
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: black;
+    font-weight: bold; 
     text-align: center;
 }
+
 
 .thumbnails::-webkit-scrollbar {
     display: none;
@@ -82,7 +95,7 @@ body {
     cursor: pointer;
     position: absolute;
     top: 50%; 
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 #backBtn {
