@@ -8,11 +8,13 @@
 </head>
 
 <body>
+    <img src="./Imgs/accelerate-svgrepo-com.svg" id="fuseau" alt="Flying Fuseau">
     <div class="thumbnails-wrap">
-        <img src="./hackathon.avif" id="backBtn">
+        <img src="./Imgs/button-arrow-left-svgrepo-com.svg" id="backBtn">
 
         <div class="thumbnails">
-            <!-- First Row of Images with Text Below -->
+          
+
             <div class="image-container">
                 <img src="./hackathon.avif" alt="Image 1">
                 <p class="image-text">TEXT NEEDED HERE</p>
@@ -26,7 +28,7 @@
                 <p class="image-text">TEXT NEEDED HERE3</p>
             </div>
             
-            <!-- Second Row of Images with Text Below -->
+           
             <div class="image-container">
                 <img src="./hackathon.avif" alt="Image 4">
                 <p class="image-text">TEXT NEEDED HERE</p>
@@ -37,7 +39,7 @@
             </div>  
         </div>
 
-        <img src="./hackathon.avif" id="nextBtn">
+        <img src="./Imgs/button-arrow-right-svgrepo-com.svg" id="nextBtn">
     </div>
     
     <script>
@@ -59,6 +61,25 @@
             scrollContainer.style.scrollBehavior = "smooth";
             scrollContainer.scrollLeft -= 300; 
         });
+
+        const fuseau = document.getElementById("fuseau");
+
+let x = 0;
+let speed = 3; 
+
+function flyFuseau() {
+    if (x < window.innerWidth) {
+        x += speed;
+        fuseau.style.transform = `translate(${x}px, -50%) rotate(${x}deg)`;
+        requestAnimationFrame(flyFuseau);
+    } else {
+        x = -100; 
+        flyFuseau();
+    }
+}
+
+flyFuseau(); 
+        
     </script>
 </body>
 

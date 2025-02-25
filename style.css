@@ -5,9 +5,24 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background: #fffbfb;
+    background: black; 
+    overflow: hidden;  
+    height: 100vh;
+    margin: 0;
 }
+
+#fuseau {
+    width: 100px; 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease-in-out;
+}
+
+
 
 .thumbnails {
     width: 900px;
