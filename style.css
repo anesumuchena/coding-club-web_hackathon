@@ -15,7 +15,7 @@ body {
     overflow-x: scroll;
 }
 
-/* Ensuring proper wrapping for images */
+
 .thumbnails div {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ body {
     justify-content: center;
 }
 
-/* Ensuring images and text are stacked */
+
 .image-container {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Styling for text below images */
+
 .image-text {
     margin-top: 10px;
     font-size: 14px;
@@ -50,7 +50,7 @@ body {
     display: none;
 }
 
-/* Adjusted Thumbnails Wrapper */
+
 .thumbnails-wrap {
     display: flex;
     align-items: center;
@@ -58,27 +58,27 @@ body {
     margin: 10% auto;
     position: relative;
     width: 100%;
-    height: 300px; /* Ensure it matches the image height */
+    height: 300px; 
 }
 
-/* Navigation buttons (moved closer to images) */
+
 #backBtn, #nextBtn {
     width: 50px;
     cursor: pointer;
     position: absolute;
-    top: 50%; /* Aligns to the middle */
-    transform: translateY(-50%); /* Adjusts to exact middle */
+    top: 50%; 
+    transform: translateY(-50%); 
 }
 
 #backBtn {
-    left: 50px; /* Move closer */
+    left: 50px; 
 }
 
 #nextBtn {
-    right: 50px; /* Move closer */
+    right: 50px; 
 }
 
-/* Hover effect on images */
+
 .thumbnails div img:hover {
     filter: grayscale(0);
     cursor: pointer;
