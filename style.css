@@ -1,4 +1,4 @@
-*{ 
+* { 
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -15,56 +15,73 @@ body {
     overflow-x: scroll;
 }
 
+/* Ensuring proper wrapping for images */
 .thumbnails div {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 10px;
-    flex: none;
+    justify-content: center;
 }
 
-.thumbnails div img {
-    width: 100px;
+/* Ensuring images and text are stacked */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 250px;
     filter: grayscale(100%);
-    transition: transform 0.3s, box-shadow 0.3s; 
-    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.thumbnails::-webkit-scrollbar{
+/* Styling for text below images */
+.image-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.thumbnails::-webkit-scrollbar {
     display: none;
 }
 
+/* Adjusted Thumbnails Wrapper */
 .thumbnails-wrap {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10% auto;
-    position: relative;  /* Positioning context for the buttons */
-    width: 100%;  /* Ensure it spans full width for proper button positioning */
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ensure it matches the image height */
 }
 
+/* Navigation buttons (moved closer to images) */
 #backBtn, #nextBtn {
     width: 50px;
     cursor: pointer;
-    margin: 40px;
-    position: absolute;  /* Keep buttons in absolute position */
-    top: 50%;  /* Vertically center the buttons */
-    transform: translateY(-50%);  /* Adjust for exact centering */
+    position: absolute;
+    top: 50%; /* Aligns to the middle */
+    transform: translateY(-50%); /* Adjusts to exact middle */
 }
 
 #backBtn {
-    left: 0;  /* Position the left button on the left side */
+    left: 50px; /* Move closer */
 }
 
 #nextBtn {
-    right: 0;  /* Position the right button on the right side */
+    right: 50px; /* Move closer */
 }
 
+/* Hover effect on images */
 .thumbnails div img:hover {
     filter: grayscale(0);
     cursor: pointer;
-    transform: scale(1.2);  /* Make the image bigger */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);  /* Add shadow to create a pop-out effect */
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-

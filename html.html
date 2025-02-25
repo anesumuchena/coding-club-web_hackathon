@@ -1,55 +1,64 @@
 <!DOCTYPE html>
-
 <html>  
 
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corousel</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="thumbnails-wrap">
         <img src="./hackathon.avif" id="backBtn">
-        <div class="thumbnails">
-            <div>
-                <span><img src="./hackathon.avif"></span>
-                <span><img src="./hq720 (3).avif"></span>
-                <span><img src="./hq720 (6).avif"></span>
-            </div>
 
-            <div>
-                <span><img src="./hackathon.avif"></span>
-                <span><img src="./hq720 (3).avif"></span>
-                <span><img src="./hq720 (6).avif"></span>
+        <div class="thumbnails">
+            <!-- First Row of Images with Text Below -->
+            <div class="image-container">
+                <img src="./hackathon.avif" alt="Image 1">
+                <p class="image-text">TEXT NEEDED HERE</p>
+            </div>  
+            <div class="image-container">
+                <img src="./hq720 (3).avif" alt="Image 2">
+                <p class="image-text">TEXT NEEDED HERE2</p>
+            </div>  
+            <div class="image-container">
+                <img src="./hq720 (6).avif" alt="Image 3">
+                <p class="image-text">TEXT NEEDED HERE3</p>
             </div>
+            
+            <!-- Second Row of Images with Text Below -->
+            <div class="image-container">
+                <img src="./hackathon.avif" alt="Image 4">
+                <p class="image-text">TEXT NEEDED HERE</p>
+            </div>  
+            <div class="image-container">
+                <img src="./hq720 (3).avif" alt="Image 5">
+                <p class="image-text">TEXT NEEDED HERE2</p>
+            </div>  
         </div>
+
         <img src="./hackathon.avif" id="nextBtn">
     </div>
-
+    
     <script>
+        let scrollContainer = document.querySelector(".thumbnails");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
 
-    let scrollContainer = document.querySelector(".thumbnails");
-    let backBtn = document.getElementById("backBtn");
-    let nextBtn = document.getElementById("nextBtn");
-    
-    scrollContainer.addEventListener("wheel", (evt) => {
-        evt.preventDefault();
-        scrollContainer.scrollLeft += evt.deltaY;
-        scrollContainer.style.scrollBehavior = "auto";
-    });
-    
-    nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 300; 
-    });
-    backBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft -= 300; 
-    });
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
 
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 300; 
+        });
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 300; 
+        });
     </script>
 </body>
 
