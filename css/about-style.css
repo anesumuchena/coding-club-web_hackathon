@@ -1,0 +1,48 @@
+body{
+}
+
+/* ------------------Gallery-------------------------------- */
+
+.gallery{
+    margin: auto;
+    background-color: navy;
+    min-height: auto;
+    max-width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: navy;
+}
+
+.gallery-heading{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+.media-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 30px;
+    align-content: center;
+    row-gap: 30px;
+}
+
+.media{
+    margin: auto;
+    width: 35vh;
+}
+
+img{
+    width: 35vh;
+    border-radius: 10px;
+}
+
+video{
+    max-width: 35vh;
+    border-radius: 10px;
+}
+
+/* ---------------End Gallery------------------------------- */
