@@ -2,28 +2,7 @@ body{
     background-color: grey;
 }
 
-.header{
-    max-width: 90%;
-}
-
-.logo{
-    float: left;
-}
-
-.nav-menu{
-    display: flex;
-    justify-content: flex-end;
-    padding: 20;
-}
-.nav-list{
-    background-color: orange;
-}
-
-.list{
-    padding: 20;
-}
-
-/* Footer css */
+/* ------------------Footer css------------------------ */
 
 .footer{
     background-color: rgb(2, 0, 105);
@@ -97,4 +76,4 @@ a:active{
     text-align: center;
 }
 
-/* end footer */
+/* ------------------------End Footer------------------------- */
