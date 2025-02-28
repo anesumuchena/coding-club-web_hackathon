@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+    <section class="contact-us">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Stay connected with us through our social media.</p>
+            <p>Let's code it!</p>
+        
+            <form id="contact-form">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your first name">
+                
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required placeholder="Your surname">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+                
+                <button type="submit">Submit</button>
+            </form>
+        
+            <div class="social-links">
+                <a href="#" id="linkedin" target="_blank">LinkedIn</a>
+                <a href="#" id="tiktok" target="_blank">TikTok</a>
+                <a href="#" id="github" target="_blank">GitHub</a>
+                <a href="#" id="instagram" target="_blank">Instagram</a>
+            </div>
+        
+            <div class="emails">
+                <p>Email us at:</p>
+                <p id="email-link">Codingclub404@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const socialLinks = {
+                linkedin: "https://www.linkedin.com/in/coding-club-3841b1349",
+                tiktok: "https://www.tiktok.com/@codingclub404",
+                instagram: "https://www.instagram.com/codingclub404?igsh=MTB4amQzNWxnZDgzeg==",
+                github: "https://github.com/CODINGCLUB404"
+            };
+            
+            for (let id in socialLinks) {
+                let linkElement = document.getElementById(id);
+                if (linkElement) {
+                    linkElement.href = socialLinks[id];
+                }
+            }
+            
+            const emailLink = document.getElementById("email-link");
+            emailLink.addEventListener("click", function() {
+                window.location.href = "mailto:" + emailLink.textContent;
+            });
+            
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Thank you for reaching out, " + document.getElementById("name").value + "!");
+            });
+        });
+    </script>
+</body>
+</html>
