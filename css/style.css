@@ -1,24 +1,39 @@
 body{
-    background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-.header{
-    max-width: 90%;
-}
+/* About section CSS */
 
-.logo{
-    float: left;
-}
-
-.nav-menu{
+.about {
     display: flex;
-    justify-content: flex-end;
-    padding: 20;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
 }
-.nav-list{
-    background-color: orange;
+.about-section {
+    display: flex;
+    background: lightskyblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+.about-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.about-text {
+    flex: 1;
+}
+.about-text h2 {
+    margin-top: 0;
 }
 
-.list{
-    padding: 20;
-}
+/* About End */
