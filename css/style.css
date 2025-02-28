@@ -1,39 +1,116 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
 }
 
 /* About section CSS */
 
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
 }
 .about-section {
-    display: flex;
-    background: lightskyblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    width: 100%;
+  display: flex;
+  background: lightskyblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
 }
 .about-section img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    margin-right: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 .about-text {
-    flex: 1;
+  flex: 1;
 }
 .about-text h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* About End */
+
+/* Footer css */
+
+.footer {
+  background-color: rgb(2, 0, 105);
+  width: 100%;
+  min-height: fit-content;
+  bottom: 0px;
+}
+
+.content-limiter {
+  margin: auto;
+  max-width: 90%;
+  min-height: auto;
+  background-color: rgb(2, 0, 105);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.footer-top {
+  background-color: rgb(2, 0, 105);
+  margin: auto;
+  min-height: auto;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.box-1 {
+  margin-left: auto;
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 20%;
+  color: white;
+  align-content: center;
+}
+.box-2 {
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 30%;
+  color: white;
+  align-content: center;
+}
+.box-3 {
+  margin-right: auto;
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 30%;
+  color: white;
+  align-content: center;
+}
+
+.footer-bottom {
+  color: white;
+  background-color: rgb(9, 0, 74);
+  margin: auto;
+  min-height: 40px;
+  align-content: center;
+  text-align: center;
+}
+
+/* End Footer */
