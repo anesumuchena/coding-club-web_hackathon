@@ -3,7 +3,7 @@ body {
 
 /* Header section */
 
-.header{
+.header {
   width: 100%;
   height: 500px;
   background-image: url(../images/hackathon-resources/image-1.jpeg);
@@ -12,9 +12,8 @@ body {
   background-repeat: no-repeat;
   z-index: 1;
   padding-top: 50px;
-  margin-bottom: 100px;
 }
-.header::after{
+.header::after {
   content: "";
   position: absolute;
   top: 0;
@@ -24,35 +23,35 @@ body {
   background: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-.nav-container{
+.nav-container {
   display: flex;
   align-items: center;
   z-index: 3;
 }
-.logo{
+.logo {
   z-index: 3;
 }
-.logo img{
+.logo img {
   max-width: 100px;
   margin-left: 50px;
   border-radius: 15px;
   z-index: 3;
 }
-.navigation{
+.navigation {
   margin-left: auto;
   margin-right: 50px;
   z-index: 3;
 }
-.navigation ul{
+.navigation ul {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
 }
-.navigation ul li{
+.navigation ul li {
   margin: 0 10px;
 }
-.hero{
+.hero {
   z-index: 3;
   text-align: center;
   color: white;
@@ -63,7 +62,7 @@ body {
 
 /* What we do */
 
-.what-we-do{
+.what-we-do {
   font-family: Arial, sans-serif;
   margin: auto;
   padding: 0;
@@ -82,7 +81,8 @@ body {
   width: 90%;
   max-width: 900px;
 }
-.about-section, .what-we-do {
+.about-section,
+.what-we-do {
   margin-bottom: 20px;
 }
 .about-section img {
@@ -92,11 +92,14 @@ body {
   display: block;
   margin: 0 auto 20px;
 }
-.about-text h2, .what-we-do h2 {
+.about-text h2,
+.what-we-do h2 {
   font-weight: bold;
   font-size: 2em;
 }
-.about-text p, .what-we-do p, .what-we-do ul {
+.about-text p,
+.what-we-do p,
+.what-we-do ul {
   font-weight: bold;
   font-size: 1.2em;
   padding-left: 150px;
@@ -207,6 +210,9 @@ a:active {
   width: 20%;
   color: white;
   align-content: center;
+}
+.box-1 img {
+  border-radius: 15px;
 }
 .box-2 {
   background-color: rgb(2, 0, 105);
