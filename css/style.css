@@ -40,6 +40,13 @@ body {
 
 /* Events */
 
+.events{
+}
+
+.events-heading{
+  text-align: center;
+}
+
 #fuseau {
   width: 100px;
   position: absolute;
