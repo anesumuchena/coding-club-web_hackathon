@@ -12,6 +12,7 @@ body {
   background-repeat: no-repeat;
   z-index: 1;
   padding-top: 50px;
+  margin-bottom: 100px;
 }
 .header::after{
   content: "";
@@ -59,6 +60,57 @@ body {
 }
 
 /* Header end */
+
+/* What we do */
+
+.what-we-do{
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0;
+  background-color: #001f3f;
+  color: white;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+}
+.about-section, .what-we-do {
+  margin-bottom: 20px;
+}
+.about-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.about-text h2, .what-we-do h2 {
+  font-weight: bold;
+  font-size: 2em;
+}
+.about-text p, .what-we-do p, .what-we-do ul {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.what-we-do ul {
+  list-style-type: none;
+  padding: 0;
+}
+.what-we-do li {
+  margin: 5px 0;
+}
+
+/* What we do End */
 
 /* Gallery */
 
