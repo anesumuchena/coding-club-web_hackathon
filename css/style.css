@@ -38,6 +38,101 @@ body {
 
 /* About End */
 
+/* Events */
+
+#fuseau {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+#fusee {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.thumbnails {
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.thumbnails div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 250px;
+  filter: grayscale(100%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+.thumbnails-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+#backBtn,
+#nextBtn {
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#backBtn {
+  left: 50px;
+}
+
+#nextBtn {
+  right: 50px;
+}
+
+.thumbnails div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Events End */
+
 /* Footer css */
 
 .footer {

@@ -1,48 +1,125 @@
-body{
+body {
 }
 
-/* ------------------Gallery-------------------------------- */
+/* Gallery */
 
-.gallery{
-    margin: auto;
-    background-color: navy;
-    min-height: auto;
-    max-width: 90%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 15px;
-    border-width: 10px;
-    border-color: navy;
+.gallery {
+  margin: auto;
+  background-color: navy;
+  min-height: auto;
+  max-width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  border-width: 10px;
+  border-color: navy;
 }
 
-.gallery-heading{
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    margin: 30px;
+.gallery-heading {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin: 30px;
 }
 
-.media-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    margin: 30px;
-    align-content: center;
-    row-gap: 30px;
+.media-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 30px;
+  align-content: center;
+  row-gap: 30px;
 }
 
-.media{
-    margin: auto;
-    width: 35vh;
+.media {
+  margin: auto;
+  width: 35vh;
 }
 
-img{
-    width: 35vh;
-    border-radius: 10px;
+.media img {
+  width: 35vh;
+  border-radius: 10px;
 }
 
-video{
-    max-width: 35vh;
-    border-radius: 10px;
+.media video {
+  max-width: 35vh;
+  border-radius: 10px;
 }
 
-/* ---------------End Gallery------------------------------- */
+/* End Gallery */
+
+/* Footer css */
+
+.footer {
+  background-color: rgb(2, 0, 105);
+  width: 100%;
+  min-height: fit-content;
+  bottom: 0px;
+}
+
+.content-limiter {
+  margin: auto;
+  max-width: 90%;
+  min-height: auto;
+  background-color: rgb(2, 0, 105);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.footer-top {
+  background-color: rgb(2, 0, 105);
+  margin: auto;
+  min-height: auto;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.box-1 {
+  margin-left: auto;
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 20%;
+  color: white;
+  align-content: center;
+}
+.box-2 {
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 30%;
+  color: white;
+  align-content: center;
+}
+.box-3 {
+  margin-right: auto;
+  background-color: rgb(2, 0, 105);
+  min-height: fit-content;
+  width: 30%;
+  color: white;
+  align-content: center;
+}
+
+.footer-bottom {
+  color: white;
+  background-color: rgb(9, 0, 74);
+  margin: auto;
+  min-height: 40px;
+  align-content: center;
+  text-align: center;
+}
+
+/* End Footer */
