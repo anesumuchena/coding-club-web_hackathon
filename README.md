@@ -1,2 +1,11 @@
-# coding-club-web_hackathon
-Creating a website for the Coding Club, as part of the hackathon
+Operation Overclock
+
+Group Leader:
+Anesu Muchena, EDUV4924699
+
+Team Members:
+Paulin Cingomba, EDUV4810928
+Mapaseka Lerutla, EDUV47785511
+Remoabetswe Matlala, EDUV4956339
+
+Hackathon Problem Statement
